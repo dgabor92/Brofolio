@@ -70,6 +70,16 @@
         min-height: 400px;
       }
     }
+
+    /* @media only screen and (max-device-width: 1200px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: scroll;
+        max-height: 300px;
+        max-width: 300px;
+      }
+    } */
   </style>
   <body>
     <!-- Navbar (sit on top) -->
@@ -92,13 +102,13 @@
         </a>
         <a href="#home" class="w3-bar-item w3-button">HOME</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
+          ><i class="fa fa-user"></i> RÓLAM</a
         >
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
           ><i class="fa fa-th"></i> PORTFOLIO</a
         >
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-envelope"></i> CONTACT</a
+          ><i class="fa fa-envelope"></i> ELÉRHETŐSÉG</a
         >
 
       </div>
@@ -112,7 +122,7 @@
           href="#about"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
-          >ABOUT</a
+          >RÓLAM</a
         >
         <a
           href="#portfolio"
@@ -124,7 +134,7 @@
           href="#contact"
           class="w3-bar-item w3-button"
           onclick="toggleFunction()"
-          >CONTACT</a
+          >ELÉRHETŐSÉG</a
         >
       </div>
     </div>
@@ -190,24 +200,28 @@
         </div>
       </div>
       <p class="w3-large w3-center w3-padding-16">Amiben jó vagyok:</p>
-      <p class="w3-wide"><i class="fa fa-camera"></i>Minőségbiztosítás</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 100%"
-        >
-          100%
-        </div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-laptop"></i>Coaching</p>
-      <div class="w3-light-grey">
-        <div
-          class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width: 80%"
-        >
-          80%
-        </div>
-      </div>
+      <li class="w3-wide"><i class=""></i>Aktív hallgatás</li>
+      <li class="w3-wide w3-right"><i class=""></i>Belső feszültség feloldása</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Stresszkezelés</li>
+      <li class="w3-wide w3-right"><i class=""></i>Karrier támogatás</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Belső kételyek lekűzdése</li>
+      <li class="w3-wide w3-right"><i class=""></i>Vezető támogatás</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Csapatfejlesztésbe</li>
+      <li class="w3-wide w3-right"><i class=""></i>Önmenedzselés</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Asszertív Kommunikáció</li>
+      <li class="w3-wide w3-right"><i class=""></i>Delegálás</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Konfliktus/Stresszkezelés</li>
+      <li class="w3-wide w3-right"><i class=""></i>Döntéstámogatás</li>
+      <br>
+      <li class="w3-wide"><i class=""></i>Coaching szemlélet</li>
+
+
+
     </div>
 
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -238,21 +252,15 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">Munkáim:</h3>
-      <p class="w3-center">
-        <em
-          >Here are some of my latest lorem work ipsum tipsum.<br />
-          Bővebb leírás a képre kattintva látható...</em
-        >
-      </p>
+      <h3 class="w3-center">Leggyakoribb megkeresések:</h3>
       <br />
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="w3-row-padding w3-center">
         <div class="w3-col m3">
           <img
-            src="./images/carrier.jpeg"
-            style="width: 100%"
+            src="./images/stresszkezeles.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="carrierrel kapcsolatba ide írni valamit"
@@ -262,8 +270,8 @@
         <div class="w3-col m3">
           
           <img
-            src="./images/vezeto.jpeg"
-            style="width: 100%"
+            src="./images/celkituzes.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Vezetőképzésről valami szöveg"
@@ -272,8 +280,8 @@
 
         <div class="w3-col m3">
           <img
-            src="./images/dontesi_dilemma.jpeg"
-            style="width: 100%;"
+            src="./images/outplacement_coaching.png"
+            style="width: 95%; height: 95%;  "
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Döntési dilemmáról valami szöveg"
@@ -282,8 +290,8 @@
 
         <div class="w3-col m3">
           <img
-            src="./images/munkamania.jpeg"
-            style="width: 100%"
+            src="./images/munkamania.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Munkamániáról valami szöveg"
@@ -294,8 +302,8 @@
       <div class="w3-row-padding w3-center w3-section">
         <div class="w3-col m3">
           <img
-            src="./images/idogazdalkodas.jpeg"
-            style="width: 100%"
+            src="./images/timemanagement.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Időgazdálkodásról valami szöveg"
@@ -304,8 +312,8 @@
 
         <div class="w3-col m3">
           <img
-            src="./images/motivation.jpeg"
-            style="width: 100%"
+            src="./images/dontestamogatas.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Motiválásról valami szöveg"
@@ -314,8 +322,8 @@
 
         <div class="w3-col m3">
           <img
-            src="./images/success.jpeg"
-            style="width: 100%"
+            src="./images/sikeresseg.png"
+            style="width: 75%; height: 75%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Sikerességről valami szöveg"
@@ -324,14 +332,15 @@
 
         <div class="w3-col m3">
           <img
-            src="./images/communication.jpeg"
-            style="width: 100%"
+            src="./images/communication.png"
+            style="width: 95%; height: 95%;"
             onclick="onClick(this)"
             class="w3-hover-opacity"
             alt="Hatékony kommunikációról valami szöveg"
           />
         </div>
       </div>
+      <h3 class="w3-center">Ezeken kívül ami még foglalkoztat, azt te tudod hogy nálad éppen mi...</h3>
     </div>
 
     <!-- Modal for full size images on click-->
@@ -369,19 +378,13 @@
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
       <h3 class="w3-center">Ahol megtalálsz:</h3>
-      <p class="w3-center"><em>Keress Bátran!</em></p>
+      <h2 class="w3-center"><em>Fordulj hozzám bizalommal!</em></h2>
 
       <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m4 w3-container"></div>
         <div class="w3-col m8 w3-panel">
-          <div class="w3-large w3-margin-bottom">
-            <i
-              class="
-                fa fa-map-marker fa-fw
-                w3-hover-text-black w3-xlarge w3-margin-right
-              "
-            ></i>
-            Esztergom, HU<br />
+          <div class="w3-large">
+       
             <i
               class="
                 fa fa-phone fa-fw
