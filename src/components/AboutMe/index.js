@@ -4,12 +4,7 @@ import { Box, Text, Grid, GridItem, Image } from '@chakra-ui/react';
 const AboutMe = () => {
   return (
     <Box>
-      <Box
-        textAlign="center"
-        alignItems="center"
-        // background="blackAlpha.200"
-        p="8"
-      >
+      <Box textAlign="center" alignItems="center" p="8">
         <Text fontSize="2xl">Rólam:</Text>
         <Text fontSize="xl" textAlign="justify">
           Mérnökként és coachként egyaránt célomnak tartom, hogy másokat
@@ -34,7 +29,7 @@ const AboutMe = () => {
             <Text textAlign="center" fontSize="large">
               Rólam mondták:
             </Text>
-            <Box padding="4" textAlign="center">
+            <Box padding="4">
               <Text fontSize="large" textAlign="justify">
                 "Mikor a felettesemmel beszéltem a fizetésemelésemről, nagyon
                 sokat segítettek azok a szituációs gyakorlatok, amiket mutattál.

@@ -25,7 +25,7 @@ const Layout = (props) => {
         <Flex justify="space-between" align="center" w="full">
           <Flex alignItems="center" pr={1}>
             <Text fontSize="xl" px="2" margin="0">
-              Coaching Tamás
+              D&D Coaching
             </Text>
           </Flex>
           <IconButton
@@ -38,16 +38,10 @@ const Layout = (props) => {
         </Flex>
       </Flex>
       <Container
+        p="0"
         minH="75vh"
         maxW={globalWidth}
-        p={4}
-        // style={{
-        //   backgroundImage: `url("./images/coach.jpeg")`,
-        //   backgroundRepeat: 'no-repeat',
-        //   backgroundSize: 'cover',
-        //   backgroundPosition: 'center center fixed',
-        //   // opacity: '0.45',
-        // }}
+        // p={4}
       >
         {props.children}
       </Container>

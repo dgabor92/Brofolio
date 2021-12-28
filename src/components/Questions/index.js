@@ -21,7 +21,13 @@ const Questions = () => {
                   src="./images/stresszkezeles.png"
                   alt="Stressz"
                   header="Stresszkezelés"
-                  body="ezt itt a stresszkezeléses body"
+                  body="A stressz különböző ingerek hatására az emberi szervezetben bekövetkező válaszreakció.
+                  Fontos hangsúlyozni, hogy a fizikai és lelki egészségünk megőrzése szempontjából valamennyi stresszre mindenféleképpen szükségünk van.
+                  A probléma akkor keletkezik, amikor a stressz folyamatosan jelen van az életünkben.
+                  A test a folyamatos stressz hatására egy idő után „lemerül”.
+                  Ekkor a test kilendül nyugalmi egyensúlyából, fokozottan reagál a külső ingerekre és folyamatosan az egyensúly helyreállítására törekszik.
+                  A stresszkezelésnek számos formája van és bár „tuti recept” nincs, léteznek olyan módszerek, amelyek az emberek többségénél hatékonyak.
+                  Számodra mi a legnagyobb stresszforrás az életedben?"
                 />
               </Box>
             </GridItem>
@@ -34,9 +40,15 @@ const Questions = () => {
               <Box maxW="full">
                 <PropertyField
                   src="./images/celkituzes.png"
-                  alt="célkituzés"
-                  header="Célkitűzés"
-                  body="ez itt a celkituzéses body"
+                  alt="Célmeghatározás"
+                  header="Célmeghatározás"
+                  body="Akár magán akár a szakmai életünkben szeretnénk változtatni, a célok meghatározása, új célok kitűzése segítenek abban, hogy nyomon kövessük, hogyan haladunk az úton.
+                  Sokak számára azonban ez mégsem olyan egyszerű. Ahhoz, hogy célt érj, fontos, hogy konkrétan meg tudd fogalmazni, mit is szeretnél.
+                  Tudd leírni és körbe határolni!
+                  Miképpen fogod mérni? Fontos neked a cél elérése?
+                  Ad valami pluszt az életedhez?
+                  Milyen megoldással lennél elégedett a folyamat végén? 
+                  Neked mi a célod? Meg tudod már fogalmazni?"
                 />
               </Box>
             </GridItem>
@@ -51,7 +63,12 @@ const Questions = () => {
                   src="./images/outplacement_coaching.png"
                   alt="outplacement_coaching"
                   header="Outplacement-Coaching"
-                  body="ez itt az outplacement_coaching_body"
+                  body="Sokak életében volt olyan élethelyzet, amely következtében megfogalmazódott bennük a váltás gondolata.
+                  A váltás legfőbb oka nem a teljesítményünkkel függ össze.
+                  Sokkal inkább a vállalati (cégbezárás, átszervezés, üzletág megszűnés), vagy egyéni karrier célok változásával.
+                  Ezen felül sajnos akadnak olyan esetek is amikor a cég kénytelen megválni munkavállalóitól.
+                  Ilyenkor is fontos szem előtt tartani, hogy a lehetőségek a munkaerő piacon továbbra is jelen vannak. 
+                  Te milyen élethelyzetben vagy?"
                 />
               </Box>
             </GridItem>
@@ -66,7 +83,12 @@ const Questions = () => {
                   src="./images/munkamania.png"
                   alt="Munkamánia"
                   header="Munkamánia"
-                  body="ez itt a Munkamánia body"
+                  body="Sokan magától értetődőnek tekintik, hogy a munkamánia „menedzser-betegség”.
+                  Mai értelemben azonban a munkamánia olyan függőségi állapot, amelyben a munka drogként funkcionál, mely által a társas,
+                   szociális és családi kapcsolatok háttérbe szorulnak.
+                  A munkamániások leggyakrabban álmatlansággal, gyakori fejfájással küzdenek, ezek pedig érzelmi kiüresedéshez,
+                    illetve akár összeroppanáshoz, depresszióhoz is vezethetnek.
+                  Fontos számodra a kiegyensúlyozottság? Jó érzéssel tölt el, ha egy feladatot befejeztél?"
                 />
               </Box>
             </GridItem>

@@ -27,7 +27,7 @@ function App() {
           {' '}
           <Box>
             <Text fontSize="5xl" pt="10rem" pb="10rem">
-              Coach Tomi
+              D&D Coaching
             </Text>
           </Box>
         </Box>

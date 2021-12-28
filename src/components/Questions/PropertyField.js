@@ -21,6 +21,9 @@ const PropertyField = (props) => {
         onClick={onOpen}
         width="max"
         height="250px"
+        style={{
+          cursor: 'pointer',
+        }}
       />
       <Modal isOpen={isOpen} onClose={onClose} autoFocus={false}>
         <ModalOverlay />
