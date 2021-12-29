@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Text, Icon, Box, Link } from '@chakra-ui/react';
+import { Text, Icon, Box, Link } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
+import Booking from './Booking';
 
 const Contact = () => {
   return (
@@ -25,9 +26,9 @@ const Contact = () => {
           </Box>
         </Box>
         <Box pt="2">
-          <Button colorScheme="whiteAlpha" backgroundColor="blue.700">
-            Időpont foglalás
-          </Button>
+          {/* Időpontfoglalás jön ide */}
+          <Booking />
+
           <Text pt="2" fontSize="3xl">
             Fordulj hozzám bizalommal!
           </Text>

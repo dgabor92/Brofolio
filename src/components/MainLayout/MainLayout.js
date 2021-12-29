@@ -1,7 +1,8 @@
 import {
   Flex,
+  Box,
   Spacer,
-  Text,
+  Image,
   Container,
   useColorModeValue as mode,
   useColorMode,
@@ -24,9 +25,9 @@ const Layout = (props) => {
       >
         <Flex justify="space-between" align="center" w="full">
           <Flex alignItems="center" pr={1}>
-            <Text fontSize="xl" px="2" margin="0">
-              D&D Coaching
-            </Text>
+            <Box p="2">
+              <Image src="/images/logo.png" height="50px" />
+            </Box>
           </Flex>
           <IconButton
             onClick={toggleColorMode}

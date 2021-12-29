@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 import AboutMe from './components/AboutMe';
 import GoodAt from './components/AboutMe/GoodAt';
@@ -17,19 +17,21 @@ function App() {
           minW="100%"
           maxW="100%"
           style={{
-            backgroundImage: `url("./images/coach.jpeg")`,
+            backgroundImage: `url("./images/logo.png")`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center fixed',
-            // opacity: '0.45',
+            backgroundSize: '',
+            backgroundPosition: 'center ',
+            backgroundColor: 'rgb(44,92,135)',
+            paddingTop: '10rem',
+            paddingBottom: '10rem',
           }}
         >
-          {' '}
+          {/* {' '}
           <Box>
             <Text fontSize="5xl" pt="10rem" pb="10rem">
               D&D Coaching
             </Text>
-          </Box>
+          </Box> */}
         </Box>
         <AboutMe />
         <GoodAt />
