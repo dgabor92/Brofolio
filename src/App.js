@@ -36,7 +36,7 @@ function App() {
         <AboutMe />
         <GoodAt />
         <Questions />
-        <Contact />
+        {/* <Contact /> */}
       </MainLayout>
     </div>
   );

@@ -19,9 +19,9 @@ const Contact = () => {
             <Icon as={EmailIcon} mr="2" width="6" height="6" />
             <Link
               textDecoration="underline"
-              href="mailto:deutschtamas92@gmail.com"
+              href="mailto:coaching.dndnew@gmail.com"
             >
-              deutschtamas92@gmail.com
+              coaching.dndnew@gmail.com
             </Link>
           </Box>
         </Box>

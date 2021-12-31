@@ -14,11 +14,7 @@ const Booking = () => {
     });
 
   return (
-    <Button
-      onClick={onClick}
-      colorScheme="whiteAlpha"
-      backgroundColor="blue.700"
-    >
+    <Button onClick={onClick} colorScheme="whiteAlpha">
       Időpont Foglalás
     </Button>
   );
