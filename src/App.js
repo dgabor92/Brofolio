@@ -20,7 +20,7 @@ function App() {
             backgroundImage: `url("./images/logo.png")`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: '',
-            backgroundPosition: 'center ',
+            backgroundPosition: 'center center',
             backgroundColor: 'rgb(44,92,135)',
             paddingTop: '10rem',
             paddingBottom: '10rem',

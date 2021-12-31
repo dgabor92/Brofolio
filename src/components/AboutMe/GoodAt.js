@@ -1,85 +1,47 @@
 import * as React from 'react';
 import {
   Box,
-  Text,
-  Grid,
-  GridItem,
-  // useColorModeValue as mode,
-  List,
-  ListItem,
-  ListIcon,
+  // Text,
+  Heading,
+  // Grid,
+  // GridItem,
+  // Stack,
+  // StackDivider,
+  // List,
+  // ListItem,
+  // ListIcon,
+  // useColorMode,
+  SimpleGrid,
 } from '@chakra-ui/react';
-import { CheckCircleIcon } from '@chakra-ui/icons';
+import SkillCard from '../Card/SkillCard';
 
 const GoodAt = () => {
   return (
-    <Box>
-      <Box textAlign="center" alignItems="center" pt="2">
-        <Text fontSize="2xl">Amiben jó vagyok:</Text>
+    <Box as="section" p="2">
+      <Box textAlign={'center'} pt="4" pb="8">
+        <Heading size="xl" lineHeight="normal" textAlign="center">
+          Coaching Skillek
+        </Heading>
       </Box>
-      <Box p="4" textAlign="center">
-        <Grid templateColumns="repeat(2,1fr)">
-          <GridItem colSpan={[2, 2, 1]}>
-            <List spacing={3}>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
-                Aktív hallgatás
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Belső feszültség feloldása
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Stresszkezelés
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Karrier támogatás
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Belső kételyek lekűzdése
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Vezető támogatás
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Csapatfejlesztés
-              </ListItem>
-            </List>
-          </GridItem>
-          <GridItem colSpan={[2, 2, 1]}>
-            <List spacing={3}>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Önmenedzselés
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Asszertív kommunikáció
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Delegálás
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Konfliktus/Stresszkezelés
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Döntéstámogatás
-              </ListItem>
-              <ListItem>
-                <ListIcon color="green.500" as={CheckCircleIcon} />
-                Coaching szemlélet
-              </ListItem>
-            </List>
-          </GridItem>
-        </Grid>
+      <Box maxW="7xl" mx="auto" px={{ base: 6, md: 8 }}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
+          <SkillCard value="Aktív hallgatás" />
+          <SkillCard value="Belső feszültségek feloldása" />
+          <SkillCard value="Stresszkezelés" />
+          <SkillCard value="Karriertámogatás" />
+        </SimpleGrid>
+        <SimpleGrid pt="4" columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
+          <SkillCard value="Belső kételyek lekűzdése" />
+          <SkillCard value="Vezetőtámogatás" />
+          <SkillCard value="Csapattámogatás" />
+          <SkillCard value="Önmenedzselés" />
+        </SimpleGrid>
+        <SimpleGrid pt="4" columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
+          <SkillCard value="Asszertív kommunikáció" />
+          <SkillCard value="Delegálás" />
+          <SkillCard value="Stresszkezelés" />
+          <SkillCard value="Döntéstámogatás" />
+        </SimpleGrid>
       </Box>
     </Box>
   );

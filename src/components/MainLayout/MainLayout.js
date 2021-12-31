@@ -42,6 +42,7 @@ const Layout = (props) => {
         p="0"
         minH="75vh"
         maxW={globalWidth}
+        backgroundColor="gray.400"
         // p={4}
       >
         {props.children}

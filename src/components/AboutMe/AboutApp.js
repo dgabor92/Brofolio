@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Heading, SimpleGrid } from '@chakra-ui/react';
 import AboutMeCard from '../Card/AboutMeCard';
 
 const AboutApp = () => {
@@ -11,9 +11,9 @@ const AboutApp = () => {
           mx="auto"
           px={{ base: '6', md: 8 }}
         >
-          <Box mb="16" color="white" maxW="xl">
+          <Box textAlign={'center'} pt="4" pb="8" color="white">
             <Heading size="xl" lineHeight="normal" textAlign="center">
-              Rólam mondták
+              Vélemények
             </Heading>
           </Box>
         </Box>

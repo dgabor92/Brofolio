@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Text, Grid, GridItem, Image } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Image } from '@chakra-ui/react';
 import AboutApp from './AboutApp';
 import TextCard from '../Card/TextCard';
 
@@ -47,7 +47,7 @@ const AboutMe = () => {
           >
             <Box maxW="full">
               <TextCard
-                title="Mi is a Coaching"
+                title="Mi is a Coaching?"
                 value="Kulcsot ad saját magadhoz, a te megoldásaidhoz, a te életedhez.
                 A coaching egy fejlődési lehetőség, egy együttműködésre épülő
                 eredmény- és megoldásközpontú folyamat. Egy eszköz. Eszköz az
@@ -81,41 +81,6 @@ const AboutMe = () => {
       <Box>
         <AboutApp />
       </Box>
-      {/* <Box>
-        <Grid templateColumns="repeat(2, 1fr)">
-          <GridItem colSpan={[2, 2, 1]}>
-            <Image src="/images/coach.jpeg" />
-          </GridItem>
-
-          <GridItem colSpan={[2, 2, 1]} background="">
-            <Text textAlign="center" fontSize="large">
-              Rólam mondták:
-            </Text>
-            <Box padding="4">
-              <Text fontSize="large" textAlign="justify">
-                "Mikor a felettesemmel beszéltem a fizetésemelésemről, nagyon
-                sokat segítettek azok a szituációs gyakorlatok, amiket mutattál.
-                Felkészültnek, összeszedettnek és magabiztosnak tűntem. Neked
-                köszönhetően nem féltem."
-              </Text>
-              <Text pt="2" fontSize="larger">
-                Gábor
-              </Text>
-            </Box>
-            <Box padding="4">
-              <Text fontSize="large" textAlign="justify">
-                "Azok a praktikák, melyeket a pontosabb időbeosztásom érdekében
-                átbeszéltünk, segítettek jobban, pontosabban és hatékonyabban
-                elvégezni a munkámat. Azóta nagyon sok dícséretet kaptam a
-                feletteseimtől. Nagyon hálás vagyok neked mindenért."
-              </Text>
-              <Text pt="2" fontSize="larger">
-                Erika
-              </Text>
-            </Box>
-          </GridItem>
-        </Grid>
-      </Box> */}
     </Box>
   );
 };
