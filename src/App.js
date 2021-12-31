@@ -1,8 +1,7 @@
-import { Box } from '@chakra-ui/react';
+import { Box, useColorModeValue as mode, Image } from '@chakra-ui/react';
 import React from 'react';
 import AboutMe from './components/AboutMe';
 import GoodAt from './components/AboutMe/GoodAt';
-import Contact from './components/Contact';
 import MainLayout from './components/MainLayout';
 import Questions from './components/Questions';
 
@@ -16,27 +15,15 @@ function App() {
           minH="50%"
           minW="100%"
           maxW="100%"
-          style={{
-            backgroundImage: `url("./images/logo.png")`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '',
-            backgroundPosition: 'center center',
-            backgroundColor: 'rgb(44,92,135)',
-            paddingTop: '10rem',
-            paddingBottom: '10rem',
-          }}
+          bg={mode('rgb(44,92,135)', 'rgb(44,92,135)')}
         >
-          {/* {' '}
-          <Box>
-            <Text fontSize="5xl" pt="10rem" pb="10rem">
-              D&D Coaching
-            </Text>
-          </Box> */}
+          <Box textAlign={'center'}>
+            <Image src="/images/log.png" margin="0 auto" />
+          </Box>
         </Box>
         <AboutMe />
         <GoodAt />
         <Questions />
-        {/* <Contact /> */}
       </MainLayout>
     </div>
   );

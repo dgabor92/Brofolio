@@ -26,7 +26,7 @@ const Layout = (props) => {
         <Flex justify="space-between" align="center" w="full">
           <Flex alignItems="center" pr={1}>
             <Box p="2">
-              <Image src="/images/logo.png" height="50px" />
+              <Image src="/images/log.png" height="50px" />
             </Box>
           </Flex>
           <IconButton
