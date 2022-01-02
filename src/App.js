@@ -1,4 +1,4 @@
-import { Box, useColorModeValue as mode, Image } from '@chakra-ui/react';
+import { Text, Box, useColorModeValue as mode, Image } from '@chakra-ui/react';
 import React from 'react';
 import AboutMe from './components/AboutMe';
 import GoodAt from './components/AboutMe/GoodAt';
@@ -24,6 +24,14 @@ function App() {
         <AboutMe />
         <GoodAt />
         <Questions />
+        <Text
+          textAlign={'center'}
+          p="4"
+          fontSize="2rem"
+          textDecoration="underline"
+        >
+          Fordulj hozzám bizalommal!
+        </Text>
       </MainLayout>
     </div>
   );

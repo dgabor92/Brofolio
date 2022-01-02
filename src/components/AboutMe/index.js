@@ -42,10 +42,9 @@ const AboutMe = () => {
             pt={{ base: 14, lg: 14 }}
             maxW="full"
             maxH="lg"
-            // backgroundColor="blue"
             textAlign="center"
           >
-            <Box maxW="full">
+            <Box maxW="full" pt="4">
               <TextCard
                 title="Mi is a Coaching?"
                 value="Kulcsot ad saját magadhoz, a te megoldásaidhoz, a te életedhez.
@@ -58,13 +57,7 @@ const AboutMe = () => {
               />
             </Box>
           </GridItem>
-          <GridItem
-            colSpan={[4, 2, 2]}
-            pt="4"
-            maxW="full"
-            maxH="md"
-            // backgroundColor="black"
-          >
+          <GridItem colSpan={[4, 2, 2]} pt="4" maxW="full" maxH="md">
             <Box maxW="full" height={'fit-content'}>
               <Image
                 src="/images/c.png"

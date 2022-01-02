@@ -4,6 +4,8 @@ import {
   Image,
   Icon,
   Flex,
+  Grid,
+  GridItem,
   useColorModeValue as mode,
 } from '@chakra-ui/react';
 import * as React from 'react';
@@ -22,28 +24,24 @@ export const Footer = () => (
       minH="22"
       direction={'column'}
     >
-      <Flex justify="space-between" align="center" w="full">
-        <Flex alignItems="center">
-          <Box>
-            <Image src="/images/logo.png" height="50px" />
+      <Grid
+        templateColumns="repeat(3,1fr)"
+        gap={{ base: 2, lg: 24 }}
+        padding="8"
+        justifyContent="space-between"
+        textAlign="center"
+      >
+        <GridItem colSpan={[3, 2, 1]}>
+          <Box p="2">
+            <Image margin="0 auto" src="/images/logo.png" height="50px" />
           </Box>
-        </Flex>
-        <Box pt="8">
-          <Booking />
-        </Box>
-        <Box p="2">
-          <SocialMediaLinks />
-        </Box>
-      </Flex>
-      <Flex alignItems={'center'} width="full" justify="space-between">
-        <Flex direction={'column'}>
-          <Box>
+          <Box p="2">
             <Icon as={PhoneIcon} mr="2" width="6" height="6" />
             <Link textDecoration="underline" href="tel:+36306403461">
               +36306403461
             </Link>
           </Box>
-          <Box>
+          <Box p="2">
             <Icon as={EmailIcon} mr="2" width="6" height="6" />
             <Link
               textDecoration="underline"
@@ -52,9 +50,21 @@ export const Footer = () => (
               coaching.dndnew@gmail.com
             </Link>
           </Box>
-        </Flex>
-        <CopyRight />
-      </Flex>
+        </GridItem>
+        <GridItem colSpan={[3, 2, 1]}>
+          <Box pt={{ base: 2, lg: 12 }}>
+            <Booking />
+          </Box>
+        </GridItem>
+        <GridItem colSpan={[3, 2, 1]}>
+          <Box p="2">
+            <SocialMediaLinks />
+          </Box>
+          <Box pt="2">
+            <CopyRight />
+          </Box>
+        </GridItem>
+      </Grid>
     </Flex>
   </Flex>
 );

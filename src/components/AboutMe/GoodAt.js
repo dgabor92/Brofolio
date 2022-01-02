@@ -1,18 +1,5 @@
 import * as React from 'react';
-import {
-  Box,
-  // Text,
-  Heading,
-  // Grid,
-  // GridItem,
-  // Stack,
-  // StackDivider,
-  // List,
-  // ListItem,
-  // ListIcon,
-  // useColorMode,
-  SimpleGrid,
-} from '@chakra-ui/react';
+import { Box, Heading, SimpleGrid } from '@chakra-ui/react';
 import SkillCard from '../Card/SkillCard';
 
 const GoodAt = () => {

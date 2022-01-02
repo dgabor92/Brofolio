@@ -41,10 +41,10 @@ const AboutApp = () => {
             </AboutMeCard>
             <AboutMeCard
               title=""
-              value="Mikor a felettesemmel beszéltem a előléptetésről, nagyon
-              sokat segítettek azok a szituációs gyakorlatok, amiket mutattál.
-              Felkészültnek, összeszedettnek és magabiztosnak tűntem. Neked
-              köszönhetően nem féltem."
+              value="Minden ember élt már meg átmeneti nehézségeket, találkozott akadályokkal.
+              Számomra az egyik ilyen az volt, amikor menedzseremmel egyeztettünk az előléptetésemről.
+              Nem tudtam, hogyan fogjak hozzá, vagy mit mondjak.
+              Üléseink során felismertem, hogy nincs mitől tartanom, amiért azóta is hálás vagyok."
             >
               Norbert
             </AboutMeCard>
