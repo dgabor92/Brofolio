@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@chakra-ui/react';
+import { Button, useColorModeValue } from '@chakra-ui/react';
 
 import { openPopupWidget } from 'react-calendly';
 
@@ -14,7 +14,7 @@ const Booking = () => {
     });
 
   return (
-    <Button onClick={onClick} colorScheme="whiteAlpha">
+    <Button onClick={onClick} colorScheme="facebook">
       Időpont Foglalás
     </Button>
   );

@@ -4,7 +4,7 @@ import { Box, Heading, useColorModeValue } from '@chakra-ui/react';
 const SkillCard = (props) => {
   return (
     <Box
-      bg={useColorModeValue('blue.700', 'gray.700')}
+      bg={useColorModeValue('blue.700', 'rgb(26,54,93)')}
       shadow="base"
       textAlign={'center'}
       rounded="lg"

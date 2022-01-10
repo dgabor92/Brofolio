@@ -13,14 +13,14 @@ const ListCard = (props) => {
     <Stack as="li" direction="row" spacing="4">
       <Flex direction="column" alignItems="center" aria-hidden="true">
         <Circle
-          bg={useColorModeValue('blue.700', 'blue.400')}
+          bg={useColorModeValue('blue.700', 'rgb(26,54,93)')}
           size="16"
           borderWidth="4px"
           borderColor={useColorModeValue(
             'rgb(197,169,101)',
             'rgb(197,169,101)'
           )}
-          color={useColorModeValue('rgb(197,169,101)', 'rgb(197,169,101)')}
+          color={useColorModeValue('rgb(197,169,101)', 'rgb(197,169,30)')}
         >
           {props.icon}
         </Circle>
@@ -30,7 +30,7 @@ const ListCard = (props) => {
           <Heading fontSize="md">{props.title}</Heading>
           <Text
             fontSize="sm"
-            color={useColorModeValue('gray.600', 'gray.400')}
+            color={useColorModeValue('white', 'blue.900')}
             textAlign="justify"
           >
             {props.subTitle}
