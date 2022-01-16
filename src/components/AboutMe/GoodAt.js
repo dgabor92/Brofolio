@@ -7,7 +7,7 @@ const GoodAt = () => {
     <Box as="section" p="2">
       <Box textAlign={'center'} pt="4" pb="8">
         <Heading size="xl" lineHeight="normal" textAlign="center">
-          Coaching Skillek
+          Coach Kvalitások
         </Heading>
       </Box>
       <Box maxW="7xl" mx="auto" px={{ base: 6, md: 8 }}>

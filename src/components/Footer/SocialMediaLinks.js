@@ -11,12 +11,6 @@ const SocialMediaLinks = (props) => {
         aria-label="LinkedIn"
         icon={<FaLinkedin fontSize="30px" />}
       />
-      <IconButton
-        as="a"
-        href="https://www.facebook.com/tamas.deutsch.96"
-        aria-label="Facebook"
-        icon={<FaFacebook fontSize="30px" />}
-      />
     </ButtonGroup>
   );
 };

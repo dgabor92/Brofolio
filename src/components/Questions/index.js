@@ -29,11 +29,12 @@ const Questions = () => {
       <Box maxW="2xl" mx="auto" p={{ base: 4, md: 8 }}>
         <List spacing="12">
           <ListCard
-            icon={<FontAwesomeIcon icon={faDumbbell} />}
-            title="Stresszkezelés"
-            subTitle="A stressz különböző ingerek hatására az emberi szervezetben bekövetkező válaszreakció.
-                Fontos hangsúlyozni, hogy a fizikai és lelki egészségünk megőrzése szempontjából valamennyi stresszre mindenféleképpen szükségünk van.
-                   A probléma akkor keletkezik, amikor a stressz folyamatosan jelen van az életünkben."
+            icon={<FontAwesomeIcon icon={faMedal} />}
+            title="Sikeresség"
+            subTitle="Manapság egyre többet hangoztatjuk, hogy sikeresek akarunk lenni.
+                   A siker olyan kedvező végeredmény, helyzet, állapot, vagy következmény,
+                    amely a korábbi elvárásainknak elért céljaként megfelel, melyre tudatosan törekedtünk.
+                    Egy biztos: A siker minden ember számára mást és mást jelent."
           />
           <ListCard
             icon={<FontAwesomeIcon icon={faCrosshairs} />}
@@ -59,12 +60,11 @@ const Questions = () => {
                    Ennek legfőbb oka, hogy mindent elvállalunk annak érdekében, hogy mások megítélése rólunk pozitív legyen."
           />
           <ListCard
-            icon={<FontAwesomeIcon icon={faMedal} />}
-            title="Sikeresség"
-            subTitle="Manapság egyre többet hangoztatjuk, hogy sikeresek akarunk lenni.
-                   A siker olyan kedvező végeredmény, helyzet, állapot, vagy következmény,
-                    amely a korábbi elvárásainknak elért céljaként megfelel, melyre tudatosan törekedtünk.
-                    Egy biztos: A siker minden ember számára mást és mást jelent."
+            icon={<FontAwesomeIcon icon={faDumbbell} />}
+            title="Stresszkezelés"
+            subTitle="A stressz különböző ingerek hatására az emberi szervezetben bekövetkező válaszreakció.
+                Fontos hangsúlyozni, hogy a fizikai és lelki egészségünk megőrzése szempontjából valamennyi stresszre mindenféleképpen szükségünk van.
+                   A probléma akkor keletkezik, amikor a stressz folyamatosan jelen van az életünkben."
           />
         </List>
       </Box>

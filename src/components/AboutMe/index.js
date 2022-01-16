@@ -46,7 +46,7 @@ const AboutMe = () => {
           >
             <Box maxW="full" pt="4">
               <TextCard
-                title="Mi is a Coaching?"
+                title="Mi is a coaching?"
                 value="Kulcsot ad saját magadhoz, a te megoldásaidhoz, a te életedhez.
                 A coaching egy fejlődési lehetőség, egy együttműködésre épülő
                 eredmény- és megoldásközpontú folyamat. Egy eszköz. Eszköz az
