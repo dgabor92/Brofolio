@@ -1,6 +1,6 @@
 import { ButtonGroup, IconButton } from '@chakra-ui/react';
 import * as React from 'react';
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 const SocialMediaLinks = (props) => {
   return (

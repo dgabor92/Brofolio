@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, useColorModeValue } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 
 import { openPopupWidget } from 'react-calendly';
 
