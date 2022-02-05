@@ -1,11 +1,5 @@
 import * as React from 'react';
-import {
-  Box,
-  Grid,
-  GridItem,
-  Image,
-  useColorModeValue as mode,
-} from '@chakra-ui/react';
+import { Box, Grid, GridItem, Image } from '@chakra-ui/react';
 import AboutApp from './AboutApp';
 import TextCard from '../Card/TextCard';
 import Card from '../Card';
