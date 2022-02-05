@@ -21,7 +21,7 @@ const AboutMeCard = (props) => {
       <Text as="dd" fontSize="xl" lineHeight="1" my="4" textAlign="center">
         {props.value}
       </Text>
-      <Text as="dd" color={useColorModeValue('rgb(44,82,130)', 'blue.700')}>
+      <Text as="dd" color={useColorModeValue('rgb(44,82,130)', '#F0000')}>
         {props.children}
       </Text>
     </Box>

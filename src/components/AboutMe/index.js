@@ -1,7 +1,14 @@
 import * as React from 'react';
-import { Box, Grid, GridItem, Image } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  GridItem,
+  Image,
+  useColorModeValue as mode,
+} from '@chakra-ui/react';
 import AboutApp from './AboutApp';
 import TextCard from '../Card/TextCard';
+import Card from '../Card';
 
 const AboutMe = () => {
   return (
@@ -9,8 +16,18 @@ const AboutMe = () => {
       <Box p="2">
         <Grid templateColumns="repeat(4, 1fr)" m="0" p="2">
           <GridItem colSpan={[4, 2, 2]} pt="2" maxW="full" maxH="lg">
-            <Box maxW="full">
-              <Image src="" alt="Tesa kép ide" />
+            <Box maxW="full" pl={{ base: '0', lg: '4' }} alignItems="center">
+              <Box maxW="lg" pl={{ base: '0', lg: '20' }}>
+                <Card>
+                  <Image
+                    src="/images/tesa3.png"
+                    margin="0 auto"
+                    width={280}
+                    height={320}
+                    alt="Deutsch Tamás fotó"
+                  />
+                </Card>
+              </Box>
             </Box>
           </GridItem>
           <GridItem
