@@ -1,4 +1,10 @@
-import { Text, Box, useColorModeValue as mode, Image } from '@chakra-ui/react';
+import {
+  Text,
+  Box,
+  useColorModeValue as mode,
+  Image,
+  Heading,
+} from '@chakra-ui/react';
 import React from 'react';
 import AboutMe from './components/AboutMe';
 import GoodAt from './components/AboutMe/GoodAt';
@@ -19,6 +25,19 @@ function App() {
         >
           <Box textAlign={'center'}>
             <Image src="/images/log.png" margin="0 auto" />
+          </Box>
+        </Box>
+        <Box bg="blue.700" pt="5" pb="5">
+          <Box
+            maxW={{ base: 'md', md: '5xl' }}
+            mx="auto"
+            px={{ base: '4', md: 6 }}
+          >
+            <Box textAlign={'center'} p="2" color="white">
+              <Heading size={'lg'} lineHeight="normal" textAlign="center">
+                Üdvözöllek az oldalamon, engem Deutsch Tamásnak hívnak!
+              </Heading>
+            </Box>
           </Box>
         </Box>
         <AboutMe />

@@ -33,7 +33,7 @@ const AboutMe = () => {
           >
             <Box maxW="full">
               <TextCard
-                title="Rólam"
+                title="Ars poetica"
                 value="   Mérnökként és coachként egyaránt célomnak tartom, hogy másokat
                 támogassak, továbbá a bennük rejlő képességek birtokában
                 hozzásegíthessem őket céljuk eléréséhez, és hogy sikeressé

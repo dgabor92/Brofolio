@@ -13,20 +13,20 @@ const GoodAt = () => {
       <Box maxW="7xl" mx="auto" px={{ base: 6, md: 8 }}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
           <SkillCard value="Aktív hallgatás" />
-          <SkillCard value="Belső feszültségek feloldása" />
+          <SkillCard value="Érzelmi intelligencia" />
           <SkillCard value="Stresszkezelés" />
-          <SkillCard value="Karriertámogatás" />
+          <SkillCard value="Nyitott látásmód" />
         </SimpleGrid>
         <SimpleGrid pt="4" columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
-          <SkillCard value="Belső kételyek lekűzdése" />
+          <SkillCard value="Kérdezéstechnika" />
           <SkillCard value="Vezetőtámogatás" />
-          <SkillCard value="Csapattámogatás" />
+          <SkillCard value="Együttműködés" />
           <SkillCard value="Önmenedzselés" />
         </SimpleGrid>
         <SimpleGrid pt="4" columns={{ base: 1, md: 2, lg: 4 }} spacing="6">
           <SkillCard value="Asszertív kommunikáció" />
-          <SkillCard value="Delegálás" />
-          <SkillCard value="Stresszkezelés" />
+          <SkillCard value="Alkalmazkodóképesség" />
+          <SkillCard value="Kreativitás" />
           <SkillCard value="Döntéstámogatás" />
         </SimpleGrid>
       </Box>

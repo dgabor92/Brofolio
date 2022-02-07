@@ -21,7 +21,7 @@ const Questions = () => {
         >
           <Box textAlign={'center'} pt="2" pb="4" color="white">
             <Heading size="xl" lineHeight="normal" textAlign="center">
-              Amiben segíteni tudok
+              Amiben támogatni tudlak
             </Heading>
           </Box>
         </Box>
