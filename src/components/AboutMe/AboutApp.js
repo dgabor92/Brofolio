@@ -22,13 +22,12 @@ const AboutApp = () => {
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: 6, md: 8 }}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing="6">
             <AboutMeCard
-              title=""
-              value="Azok a praktikák, melyeket a pontosabb időbeosztásom érdekében
-                átbeszéltünk, segítettek jobban, pontosabban és hatékonyabban
-                elvégezni a munkámat. Azóta nagyon sok dícséretet kaptam a
-                feletteseimtől. Nagyon hálás vagyok neked mindenért."
+              value="Vezetőként is gyakran szembe találjuk magunkat nehéz helyzetekkel.
+              A megoldandó feladatok mindig új szemléletet és megfelelő tervezést igényelnek. 
+              A sikeres coaching folyamat során sikerült átadnod az ehhez szükséges strukturált eszközöket, 
+              hogy az elakadások helyett megoldások szülessenek."
             >
-              Erika
+              Krisztián
             </AboutMeCard>
             <AboutMeCard
               title=""
