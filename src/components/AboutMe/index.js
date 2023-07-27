@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Box, Grid, GridItem, Image } from '@chakra-ui/react';
-import AboutApp from './AboutApp';
-import TextCard from '../Card/TextCard';
-import Card from '../Card';
+import * as React from "react";
+import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import AboutApp from "./AboutApp";
+import TextCard from "../Card/TextCard";
+import Card from "../Card";
 
 const AboutMe = () => {
   return (
@@ -10,8 +10,8 @@ const AboutMe = () => {
       <Box p="2">
         <Grid templateColumns="repeat(4, 1fr)" m="0" p="2">
           <GridItem colSpan={[4, 2, 2]} pt="2" maxW="full" maxH="lg">
-            <Box maxW="full" pl={{ base: '0', lg: '4' }} alignItems="center">
-              <Box maxW="lg" pl={{ base: '0', lg: '20' }}>
+            <Box maxW="full" pl={{ base: "0", lg: "4" }} alignItems="center">
+              <Box maxW="lg" pl={{ base: "0", lg: "20" }}>
                 <Card>
                   <Image
                     src="/images/tesa3.png"
@@ -34,7 +34,7 @@ const AboutMe = () => {
             <Box maxW="full">
               <TextCard
                 title="Ars poetica"
-                value="   Mérnökként és coachként egyaránt célomnak tartom, hogy másokat
+                value="   Vezetőként és coachként egyaránt célomnak tartom, hogy másokat
                 támogassak, továbbá a bennük rejlő képességek birtokában
                 hozzásegíthessem őket céljuk eléréséhez, és hogy sikeressé
                 váljanak. A coaching azért áll hozzám közel, mert olyan
@@ -69,14 +69,14 @@ const AboutMe = () => {
             </Box>
           </GridItem>
           <GridItem colSpan={[4, 2, 2]} pt="4" maxW="full" maxH="md">
-            <Box maxW="full" height={'fit-content'}>
+            <Box maxW="full" height={"fit-content"}>
               <Image
                 src="/images/c.png"
                 alt="Mi is a coaching kép"
-                width={'500px'}
-                height={'300px'}
-                display={'block'}
-                margin={'0 auto'}
+                width={"500px"}
+                height={"300px"}
+                display={"block"}
+                margin={"0 auto"}
               />
             </Box>
           </GridItem>
