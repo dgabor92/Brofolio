@@ -1,11 +1,25 @@
-version: '3.7'
-
+version: "3.7"
 services:
-  frontend:
-    image: node:16-alpine
-    container_name: Brofolio
-    ports: [3000:3000]
-    working_dir: /app/frontend
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: coaching
+    stdin_open: true
     volumes:
-      - ./:/app/frontend
-    command: npm start
+      - ./:/var/www/html/coaching
+      - /var/www/html/coaching/node_modules
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`coaching.dndnew.hu`)"
+      - "traefik.http.routers.app.entrypoints=websecure"
+      - "traefik.http.routers.app.tls.certresolver=myresolver"
+    ports:
+      - 3000:3000
+    networks:
+      - traefik-public
+    command: npm run start
+
+networks:
+  traefik-public:
+    external: true

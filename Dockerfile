@@ -1,17 +1,14 @@
-FROM node:16-alpine
+FROM node:16.3.0-alpine3.13
 
-# create app directory
-WORKDIR /app/frontend
+RUN mkdir -p /var/www/html/coaching
 
-# Installing dependencies
-COPY package*.json ./
-RUN npm install
+WORKDIR /var/www/html/coaching
 
-# Copying source files
-COPY . .
+COPY package.json /var/www/html/coaching
 
-# Building app
-RUN npm run build
+RUN npm install --legacy-peer-deps
 
-# Running the app
-CMD [ "npm", "start" ] 
+COPY . /var/www/html/coaching
+
+EXPOSE 3000
+CMD ["npm", "run", "start"]
