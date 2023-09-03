@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  app:
+  coaching:
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,9 +11,9 @@ services:
       - /var/www/html/coaching/node_modules
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.app.rule=Host(`coaching.dndnew.hu`)"
-      - "traefik.http.routers.app.entrypoints=websecure"
-      - "traefik.http.routers.app.tls.certresolver=myresolver"
+      - "traefik.http.routers.coaching.rule=Host(`coaching.dndnew.hu`)"
+      - "traefik.http.routers.coaching.entrypoints=websecure"
+      - "traefik.http.routers.coaching.tls.certresolver=myresolver"
     ports:
       - 3000:3000
     networks:
