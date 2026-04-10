@@ -13,8 +13,8 @@ import {
   Stack,
   Text,
   chakra,
-} from '@chakra-ui/react';
-import { motion, useReducedMotion } from 'framer-motion';
+} from "@chakra-ui/react";
+import { motion, useReducedMotion } from "framer-motion";
 import {
   FaArrowRight,
   FaCheck,
@@ -22,66 +22,66 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhoneAlt,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const MotionBox = chakra(motion.div);
 
 const services = [
   {
-    title: 'Siker és önazonosság',
-    text: 'Ha azt érzed, hogy kifelé minden rendben van, de belül mégis feszít valami, segítek tisztábban látni, mi hajt és mi tart vissza.',
+    title: "Siker és önazonosság",
+    text: "Ha azt érzed, hogy kifelé minden rendben van, de belül mégis feszít valami, segítek tisztábban látni, mi hajt és mi tart vissza.",
   },
   {
-    title: 'Célkitűzés',
-    text: 'A nagy, ködös elképzeléseket kézzelfogható, követhető célokra bontjuk, hogy az első lépés is egyértelmű legyen.',
+    title: "Célkitűzés",
+    text: "A nagy, ködös elképzeléseket kézzelfogható, követhető célokra bontjuk, hogy az első lépés is egyértelmű legyen.",
   },
   {
-    title: 'Munkamánia és terhelés',
-    text: 'Amikor a munka átcsúszik állandó túlterhelésbe, újra lehet rendezni a ritmust, a fókuszt és a határokat.',
+    title: "Munkamánia és terhelés",
+    text: "Amikor a munka átcsúszik állandó túlterhelésbe, újra lehet rendezni a ritmust, a fókuszt és a határokat.",
   },
   {
-    title: 'Időgazdálkodás',
-    text: 'A túl sok feladat helyett egy működőbb rendszerre állunk át, hogy ne csak sűrű legyen a nap, hanem eredményes is.',
+    title: "Időgazdálkodás",
+    text: "A túl sok feladat helyett egy működőbb rendszerre állunk át, hogy ne csak sűrű legyen a nap, hanem eredményes is.",
   },
   {
-    title: 'Stresszkezelés',
-    text: 'A nyomás alatt is maradhat mozgástered, ha megtaláljuk, nálad mi segít visszanyerni a kontrollt és a nyugalmat.',
+    title: "Stresszkezelés",
+    text: "A nyomás alatt is maradhat mozgástered, ha megtaláljuk, nálad mi segít visszanyerni a kontrollt és a nyugalmat.",
   },
 ];
 
 const strengths = [
-  'Aktív hallgatás',
-  'Érzelmi intelligencia',
-  'Kérdezéstechnika',
-  'Asszertív kommunikáció',
-  'Vezetőtámogatás',
-  'Együttműködés',
-  'Alkalmazkodóképesség',
-  'Döntéstámogatás',
+  "Aktív hallgatás",
+  "Érzelmi intelligencia",
+  "Kérdezéstechnika",
+  "Asszertív kommunikáció",
+  "Vezetőtámogatás",
+  "Együttműködés",
+  "Alkalmazkodóképesség",
+  "Döntéstámogatás",
 ];
 
 const testimonials = [
   {
-    name: 'Krisztián',
+    name: "Krisztián",
     quote:
-      'A közös munka segített rendezni a helyzeteket és a megoldások felé fordítani a figyelmet.',
+      "A közös munka segített rendezni a helyzeteket és a megoldások felé fordítani a figyelmet.",
   },
   {
-    name: 'Gábor',
+    name: "Gábor",
     quote:
-      'A gyakorlatoknak köszönhetően sokkal összeszedettebben és magabiztosabban tudtam belépni a beszélgetésbe.',
+      "A gyakorlatoknak köszönhetően sokkal összeszedettebben és magabiztosabban tudtam belépni a beszélgetésbe.",
   },
   {
-    name: 'Norbert',
+    name: "Norbert",
     quote:
-      'Az ülések végére világosabb lett, hogyan lehet egy nehéz helyzetet nyugodtan és tudatosan kezelni.',
+      "Az ülések végére világosabb lett, hogyan lehet egy nehéz helyzetet nyugodtan és tudatosan kezelni.",
   },
 ];
 
 const steps = [
-  'Rövid helyzetfeltárás: mi az, ami most a legfontosabb?',
-  'Fókuszálás: mit érdemes megtartani, és mit érdemes elengedni?',
-  'Akció: egy világos, következő lépés, amivel már el lehet indulni.',
+  "Rövid helyzetfeltárás: mi az, ami most a legfontosabb?",
+  "Fókuszálás: mit érdemes megtartani, és mit érdemes elengedni?",
+  "Akció: egy világos, következő lépés, amivel már el lehet indulni.",
 ];
 
 function SectionLabel({ children }) {
@@ -102,8 +102,8 @@ function SectionHeading({
   label,
   title,
   text,
-  titleColor = 'slate.900',
-  textColor = 'slate.600',
+  titleColor = "slate.900",
+  textColor = "slate.600",
 }) {
   return (
     <Stack spacing="4" maxW="3xl">
@@ -111,7 +111,7 @@ function SectionHeading({
       <Heading size="2xl" lineHeight="1.05" color={titleColor}>
         {title}
       </Heading>
-      <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>
+      <Text fontSize={{ base: "md", md: "lg" }} color={textColor}>
         {text}
       </Text>
     </Stack>
@@ -133,6 +133,29 @@ function SoftCard({ children, ...props }) {
     >
       {children}
     </Box>
+  );
+}
+
+function ContactLine({ href, icon, children, isExternal = false }) {
+  return (
+    <Link
+      href={href}
+      isExternal={isExternal}
+      display="flex"
+      alignItems="center"
+      gap="3"
+      w="full"
+      minH="44px"
+      fontSize={{ base: "sm", sm: "lg" }}
+      lineHeight="1.4"
+      wordBreak="break-word"
+      color="slate.700"
+    >
+      <Box flexShrink={0} display="grid" placeItems="center" boxSize="6">
+        <Icon as={icon} />
+      </Box>
+      <Text as="span">{children}</Text>
+    </Link>
   );
 }
 
@@ -180,7 +203,7 @@ function App() {
               <Image
                 src="/images/log.png"
                 alt="D&D Coaching logó"
-                boxSize={{ base: '42px', md: '52px' }}
+                boxSize={{ base: "42px", md: "52px" }}
                 objectFit="contain"
               />
               <Box>
@@ -193,7 +216,7 @@ function App() {
               </Box>
             </HStack>
 
-            <HStack spacing="8" display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing="8" display={{ base: "none", md: "flex" }}>
               <Link href="#rolam" color="slate.700" fontWeight="medium">
                 Rólam
               </Link>
@@ -210,10 +233,15 @@ function App() {
             columns={{ base: 1, lg: 2 }}
             spacing={{ base: 12, lg: 16 }}
             alignItems="center"
-            minH={{ lg: 'calc(100svh - 96px)' }}
+            minH={{ lg: "calc(100svh - 96px)" }}
             pb={{ base: 14, lg: 20 }}
           >
-            <Stack spacing="8" maxW="xl" pt={{ base: 4, lg: 0 }}>
+            <Stack
+              spacing={{ base: 6, md: 8 }}
+              maxW={{ base: "full", lg: "xl" }}
+              pt={{ base: 4, lg: 0 }}
+              align="start"
+            >
               <Reveal>
                 <Box
                   display="inline-flex"
@@ -224,9 +252,10 @@ function App() {
                   borderRadius="full"
                   bg="rgba(15, 23, 42, 0.08)"
                   color="slate.700"
-                  fontSize="sm"
+                  fontSize={{ base: "xs", sm: "sm" }}
                   fontWeight="medium"
-                  width="fit-content"
+                  width="100%"
+                  maxW={{ base: "full", sm: "fit-content" }}
                 >
                   <Icon as={FaArrowRight} />
                   Coaching vezetőknek, döntéshozóknak és elakadásokhoz
@@ -236,17 +265,18 @@ function App() {
               <Reveal delay={0.08}>
                 <Heading
                   as="h1"
-                  size="4xl"
-                  lineHeight="0.95"
+                  fontSize={{ base: "3xl", sm: "4xl", md: "5xl" }}
+                  lineHeight={{ base: "0.98", md: "0.95" }}
                   letterSpacing="-0.04em"
                   color="slate.950"
+                  maxW={{ base: "11ch", sm: "12ch", md: "13ch" }}
                 >
                   Egy tisztább tér, ahol a gondolatból irány lesz.
                 </Heading>
               </Reveal>
 
               <Reveal delay={0.16}>
-                <Text fontSize={{ base: 'lg', md: 'xl' }} color="slate.700">
+                <Text fontSize={{ base: "lg", md: "xl" }} color="slate.700">
                   Olyan coaching folyamatot építek, ahol a figyelem, a
                   strukturáltság és a bizalom együtt dolgozik azért, hogy
                   könnyebben dönts, tisztábban láss és fenntarthatóbban működj.
@@ -254,34 +284,32 @@ function App() {
               </Reveal>
 
               <Reveal delay={0.24}>
-                <HStack spacing="3" flexWrap="wrap">
-                  <Button
-                    as="a"
-                    href="#segitek"
-                    size="lg"
-                    variant="outline"
-                    borderColor="slate.300"
-                    color="slate.800"
-                    _hover={{ bg: 'whiteAlpha.700' }}
-                  >
-                    Miben tudok segíteni?
-                  </Button>
-                </HStack>
+                <Button
+                  as="a"
+                  href="#segitek"
+                  size="lg"
+                  variant="outline"
+                  borderColor="slate.300"
+                  color="slate.800"
+                  _hover={{ bg: "whiteAlpha.700" }}
+                  w={{ base: "full", sm: "auto" }}
+                >
+                  Miben tudok segíteni?
+                </Button>
               </Reveal>
 
               <Reveal delay={0.32}>
-                <HStack spacing="5" color="slate.600" flexWrap="wrap">
-                  <HStack spacing="2">
-                    <Icon as={FaPhoneAlt} />
-                    <Link href="tel:+36306403461">+36 30 640 3461</Link>
-                  </HStack>
-                  <HStack spacing="2">
-                    <Icon as={FaEnvelope} />
-                    <Link href="mailto:deutschtamas92@gmail.com">
-                      deutschtamas92@gmail.com
-                    </Link>
-                  </HStack>
-                </HStack>
+                <Stack spacing="1" color="slate.600" align="start" w="full">
+                  <ContactLine href="tel:+36306403461" icon={FaPhoneAlt}>
+                    +36 30 640 3461
+                  </ContactLine>
+                  <ContactLine
+                    href="mailto:deutschtamas92@gmail.com"
+                    icon={FaEnvelope}
+                  >
+                    deutschtamas92@gmail.com
+                  </ContactLine>
+                </Stack>
               </Reveal>
             </Stack>
 
@@ -306,7 +334,7 @@ function App() {
                     src="/images/tesa3.png"
                     alt="Deutsch Tamás portré"
                     width="100%"
-                    height={{ base: '420px', md: '560px' }}
+                    height={{ base: "420px", md: "560px" }}
                     objectFit="cover"
                     objectPosition="center top"
                   />
@@ -358,7 +386,11 @@ function App() {
                 text="Vezetőként és coachként is abban hiszek, hogy a jó kérdés, a valódi figyelem és az őszinte visszajelzés együtt tud elmozdítani egy helyzetet."
               />
 
-              <Stack spacing="5" fontSize={{ base: 'md', md: 'lg' }} color="slate.700">
+              <Stack
+                spacing="5"
+                fontSize={{ base: "md", md: "lg" }}
+                color="slate.700"
+              >
                 <Text>
                   A coaching számomra nem tanácsadás, hanem együttműködés: egy
                   olyan tér, ahol a meglévő erőforrásaidat és a számodra valóban
@@ -369,10 +401,11 @@ function App() {
                   egy döntés előtt állsz, vagy ha egyszerűen csak szeretnél
                   kiszállni a túlterheltségből és tisztábban gondolkodni.
                 </Text>
-                <HStack spacing="3" flexWrap="wrap" pt="2">
-                  {['vezetői fókusz', 'önismeret', 'cselekvés'].map((item) => (
+                <SimpleGrid columns={{ base: 1, sm: 3 }} spacing="3" pt="2">
+                  {["vezetői fókusz", "önismeret", "cselekvés"].map((item) => (
                     <Box
                       key={item}
+                      w="full"
                       px="4"
                       py="2"
                       borderRadius="full"
@@ -380,11 +413,12 @@ function App() {
                       border="1px solid rgba(15, 23, 42, 0.08)"
                       boxShadow="sm"
                       color="slate.700"
+                      textAlign="center"
                     >
                       {item}
                     </Box>
                   ))}
-                </HStack>
+                </SimpleGrid>
               </Stack>
             </SimpleGrid>
           </Reveal>
@@ -406,7 +440,10 @@ function App() {
                 />
 
                 <Box>
-                  <Stack spacing="0" divider={<Divider borderColor="slate.200" />}>
+                  <Stack
+                    spacing="0"
+                    divider={<Divider borderColor="slate.200" />}
+                  >
                     {services.map((service, index) => (
                       <Flex key={service.title} gap="5" py="5" align="start">
                         <Text
@@ -452,9 +489,7 @@ function App() {
 
               <SimpleGrid minChildWidth="220px" spacing="4">
                 {strengths.map((item) => (
-                  <SoftCard
-                    key={item}
-                  >
+                  <SoftCard key={item}>
                     <Box px="4" py="5">
                       <HStack align="start" spacing="3">
                         <Box
@@ -508,7 +543,11 @@ function App() {
                       border="1px solid rgba(255, 255, 255, 0.12)"
                       backdropFilter="blur(8px)"
                     >
-                      <Text fontSize="lg" lineHeight="1.8" color="whiteAlpha.900">
+                      <Text
+                        fontSize="lg"
+                        lineHeight="1.8"
+                        color="whiteAlpha.900"
+                      >
                         “{item.quote}”
                       </Text>
                       <Text mt="4" fontWeight="semibold" color="brand.200">
@@ -570,42 +609,65 @@ function App() {
         </Container>
       </Box>
 
-      <Box as="footer" id="kapcsolat" bg="white" borderTop="1px solid" borderColor="slate.200">
+      <Box
+        as="footer"
+        id="kapcsolat"
+        bg="white"
+        borderTop="1px solid"
+        borderColor="slate.200"
+      >
         <Container maxW="7xl" px={{ base: 5, md: 8 }}>
           <Reveal>
-            <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ base: 8, lg: 14 }} py={{ base: 14, md: 18 }}>
+            <SimpleGrid
+              columns={{ base: 1, lg: 2 }}
+              spacing={{ base: 8, lg: 14 }}
+              py={{ base: 14, md: 18 }}
+            >
               <Stack spacing="5" maxW="xl">
                 <SectionLabel>Kapcsolat</SectionLabel>
                 <Heading size="xl" color="slate.950">
                   Ha szeretnél beszélgetni, itt talál meg a leggyorsabban.
                 </Heading>
-                <Text color="slate.600" fontSize={{ base: 'md', md: 'lg' }}>
+                <Text color="slate.600" fontSize={{ base: "md", md: "lg" }}>
                   Ha úgy érzed, eljött az ideje egy nyugodtabb, fókuszáltabb
-                  működésnek, írj vagy foglalj időpontot.
+                  működésnek, írj vagy hívj bátran.
                 </Text>
-                <HStack spacing="3" flexWrap="wrap">
-                </HStack>
               </Stack>
 
               <Stack spacing="4" justify="space-between">
                 <Box>
-                  <Text fontSize="sm" textTransform="uppercase" letterSpacing="0.18em" color="slate.500">
+                  <Text
+                    fontSize="sm"
+                    textTransform="uppercase"
+                    letterSpacing="0.18em"
+                    color="slate.500"
+                  >
                     Elérhetőségek
                   </Text>
-                  <Stack spacing="3" mt="4" color="slate.700">
-                    <Link href="tel:+36306403461">+36 30 640 3461</Link>
-                    <Link href="mailto:deutschtamas92@gmail.com">
+                  <Stack spacing="1" mt="4" align="stretch">
+                    <ContactLine href="tel:+36306403461" icon={FaPhoneAlt}>
+                      +36 30 640 3461
+                    </ContactLine>
+                    <ContactLine
+                      href="mailto:deutschtamas92@gmail.com"
+                      icon={FaEnvelope}
+                    >
                       deutschtamas92@gmail.com
-                    </Link>
-                    <Link
+                    </ContactLine>
+                    <ContactLine
                       href="https://www.linkedin.com/in/deutsch-tam%C3%A1s-220939152/"
+                      icon={FaLinkedin}
                       isExternal
                     >
-                      LinkedIn <Icon as={FaLinkedin} ml="1" />
-                    </Link>
-                    <Link href="https://www.instagram.com/" isExternal>
-                      Instagram <Icon as={FaInstagram} ml="1" />
-                    </Link>
+                      LinkedIn
+                    </ContactLine>
+                    <ContactLine
+                      href="https://www.instagram.com/"
+                      icon={FaInstagram}
+                      isExternal
+                    >
+                      Instagram
+                    </ContactLine>
                   </Stack>
                 </Box>
 
