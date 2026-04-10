@@ -14,7 +14,6 @@ import { useState } from 'react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 import CopyRight from './CopyRight';
 import SocialMediaLinks from './SocialMediaLinks';
-import Booking from '../Contact/Booking';
 
 export const Footer = () => {
   const [hidden, setHidden] = useState(true);
@@ -59,17 +58,12 @@ export const Footer = () => {
                 <Icon as={EmailIcon} mr="2" width="6" height="6" />
                 <Link
                   textDecoration="underline"
-                  href="mailto:coaching.dndnew@gmail.com"
+                  href="mailto:deutschtamas92@gmail.com"
                 >
-                  coaching.dndnew@gmail.com
+                  deutschtamas92@gmail.com
                 </Link>
               </Box>
             )}
-          </GridItem>
-          <GridItem colSpan={[3, 2, 1]}>
-            <Box pt={{ base: 2, lg: 12 }}>
-              <Booking />
-            </Box>
           </GridItem>
           <GridItem colSpan={[3, 2, 1]}>
             <Box p="2">
